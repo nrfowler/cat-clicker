@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html >
-<head>
-  <meta charset="UTF-8">
-  <title>Cat and Dog Clicker</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
 
-  
-</head>
-
-<body>
-  <html>
 
 <head>
   <meta charset="UTF-8">
   <title>Cat Clicker</title>
-  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js' defer></script>
-<script  defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4HtMWumIgIKs_ITn7u3J2NXAOLnpkJY&v=3"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+  <script   defer src="js/index.js"></script>
+<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4HtMWumIgIKs_ITn7u3J2NXAOLnpkJY&v=3&callback=initMap"></script>
+
 </head>
 
 <body class="container">
@@ -26,20 +18,15 @@
     <button class="cat-link" data-bind="text: name, attr: {id: $data.id }, click:  $parent.click "></button>
     </br>
   </div>
-<!--   <div class="cat-container" data-bind="event: { mouseover: mover, mouseout: mout}"> -->
   <div class="cat-container">
     <div id="cat-display"></div>
   </div>
   <div id="cat-info-container">
-    <div id="cat-info-display">Meow</div>
+    <div id="cat-map-label"></div>
+    <div id="map">Meow</div>
+
   </div>
   <button id="power-mode-btn" data-bind="text: powerModeText, click: powerModeButton"></button>
 </body>
 
-</html>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
-
-</body>
 </html>
